@@ -19,38 +19,56 @@
 	<div class="container">
 		<form action="home.html">
 			<div class="form-group">
-  			<label for="fullname">Full Name</label>
-  			<input type="text" id="fullname" name="fullname" placeholder="Enter Name"><br>
-  			<label for="email">Email Address</label>
-  			<input type="text" id="email" name="email" placeholder="Enter Email"><br>
-  			<label for="password">Password</label>
-  			<input type="text" id="password" name="password" placeholder="Password"><br>
-  			<label for="confirmpassword">Confirm Password</label>
-  			<input type="text" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password"><br>
-  			<label for="cualumni">CU Boulder Alumni</label>
-			<input type="radio" name="choice" value="1" checked> Yes<br>
-			<input type="radio" name="choice" value="2"> No<br>
-
-  			<label for="custudent">CU Boulder Student</label>
-			<input type="radio" name="choice" value="1" checked> Yes<br>
-			<input type="radio" name="choice" value="2"> No<br>
-
-  			<label for="cualumni">Student Status</label>
-			<input type="radio" name="choice" value="1" checked> Undergrad<br>
-			<select name="select_choice">
-  <option selected>Select Student Status</option>
-  <option value="1">Freshman</option>
-  <option value="2">Sophmore</option>
-  <option value="3">Junior</option>
-  <option value="4">Senior</option>
-			</select><br>
-			<input type="radio" name="choice" value="2"> Grad<br>
-			<select name="select_choice">
-  <option selected>Select Student Status</option>
-  <option value="1">MA</option>
-  <option value="2">MBA</option>
-  <option value="3">PhD</option>
-			</select>
+        <div class="row">
+  			  <label class="col-2" for="fullname">Full Name</label>
+  			  <input class="col-6" type="text" id="fullname" name="fullname" placeholder="Enter Name"><br>
+        </div> <br>
+        <div class="row">
+  			  <label class="col-2" for="email">Email Address</label>
+  			  <input class="col-6" type="text" id="email" name="email" placeholder="Enter Email"><br>
+        </div> <br>
+        <div class="row">
+  			  <label class="col-2" for="password">Password</label>
+  			  <input class="col-6" type="text" id="password" name="password" placeholder="Password"><br>
+        </div> <br>
+        <div class="row">
+  			  <label class="col-2" for="confirmpassword">Confirm Password</label>
+  			  <input class="col-6" type="text" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password"><br>
+        </div> <br>
+        <div class="row">
+  			  <label class="col-2" for="cualumni">CU Boulder Alumni</label>
+          <div class="col-6">
+			      <input type="radio" name="choice" value="1" checked> Yes<br>
+			      <input type="radio" name="choice" value="2"> No<br>
+          </div>
+        </div> <br>
+        <div class="row">
+  			  <label class="col-2" for="custudent">CU Boulder Student</label>
+          <div class="col-6">
+			      <input type="radio" name="choice" value="1" checked> Yes<br>
+			      <input type="radio" name="choice" value="2"> No<br>
+          </div>
+        </div><br>
+        <div class="row">
+  			  <label class="col-2" for="cualumni">Student Status</label>
+          <div class="col-6">
+			      <input type="radio" name="choice" value="1" checked> Undergrad<br>
+			      <select name="select_choice">
+              <option selected>Select Student Status</option>
+              <option value="1">Freshman</option>
+              <option value="2">Sophmore</option>
+              <option value="3">Junior</option>
+              <option value="4">Senior</option>
+			      </select><br>
+			      <input type="radio" name="choice" value="2"> Grad<br>
+			      <select name="select_choice">
+              <option selected>Select Student Status</option>
+              <option value="1">MA</option>
+              <option value="2">MBA</option>
+              <option value="3">PhD</option>
+			      </select>
+          </div>
+        </div>
 			</div>
 		</form>
 			<!--
@@ -69,6 +87,7 @@
 
 			-->
 			<input type="submit" value="submit" class="btn btn-primary btn-block">
+      <br>
 		</form>
 	</div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
